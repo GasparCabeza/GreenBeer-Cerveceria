@@ -12,7 +12,7 @@ header {
   border-radius: 20px;
   border: 3px solid black; }
   header img {
-    width: 200px; }
+    width: 30%; }
   header h1 {
     align-items: center;
     color: black;
@@ -48,10 +48,11 @@ header {
 
 @media screen and (max-width: 768px) {
   header img {
-    width: 100%; }
+    width: 30%; }
   header h1 {
     position: relative;
-    padding-left: 0%; }
+    padding-left: 0%;
+    font-size: 30px; }
   header nav {
     position: relative;
     top: 0px; } }
@@ -61,10 +62,7 @@ header {
     display: flex;
     flex-direction: column; }
     header img {
-      width: 100%;
-      position: relative;
-      justify-content: center;
-      left: 35%; }
+      width: 30%; }
     header h1 {
       position: relative;
       right: 0%;
