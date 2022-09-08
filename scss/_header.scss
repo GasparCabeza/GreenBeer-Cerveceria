@@ -1,9 +1,9 @@
 header {
-    
-    display:flex;
-    
+
+    display: flex;
+
     width: 100%;
-    
+
     background-color: green;
     border-radius: 20px;
     border: 3px solid black;
@@ -29,12 +29,12 @@ header {
     }
 
     .navbar {
-        position:relative;
+        position: relative;
         padding-left: 3%;
-        
-        .container-fluid{
+
+        .container-fluid {
             position: relative;
-          
+
         }
 
         ul {
@@ -43,7 +43,7 @@ header {
 
             li {
 
-            
+
                 background-color: orange;
                 border: 1px solid black;
                 border-radius: 15px;
@@ -60,37 +60,9 @@ header {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    header {
-
-
-        h1 {
-            align-items: center;
-            color: black;
-
-            font-size: 50px;
-            text-decoration: underline;
-    
-        }
-
-        nav {
-         position: relative;
-            
-        }
-    }
-    
-}
-
 @media screen and (max-width: 768px) {
     header {
 
-
-
-        img {
-            width: 30%;
-
-
-        }
 
         h1 {
             position: relative;
@@ -98,7 +70,7 @@ header {
             font-size: 30px;
 
 
-            
+
 
         }
 
@@ -114,29 +86,22 @@ header {
 
 @media screen and (max-width: 320px) {
     header {
-        display: flex;
+        
+
         flex-direction: column;
-
-
-        img {
-            width: 30%;
-
-
-
-        }
 
         h1 {
             position: relative;
             right: 0%;
             top: 0%;
 
-            font-size: 30px;
+
         }
 
         .navbar-2 {
             display: flex;
             flex-direction: column;
-            
+
 
             top: 0px;
 
