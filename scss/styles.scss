@@ -1,17 +1,17 @@
-.body{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-@import "./header";
-@import "./main";
-@import "./footer";
+@import "./variables";
 @import "./mixing";
 @import "./bucles";
 @import "./each";
+@import "./header";
+@import "./main";
+@import "./footer.scss";
 
 
- 
+*{
+  @include reset
+}
+.top-somos {
+  @extend .bot-somos
+}
+
+

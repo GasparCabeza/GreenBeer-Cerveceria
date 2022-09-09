@@ -1,4 +1,19 @@
-$colores:(
-    "azul": blue
-    "blanco": white
-)
+//variables
+$color-primario: #358615;
+$color-secondario: black;
+$color-terciario: hsl(0, 0%, 31%);
+$color-cuarto: rgb(25, 216, 25);
+$letra-fuente: 10px;
+
+$mapa-fondo:(
+    quienes-somos:#358615,
+    catalogo:black,
+    barril:  hsl(0, 0%, 31%),
+    contacto:rgb(25, 216, 25),
+);
+@each $colores,$fondo in $mapa-fondo {
+  .clase--#{$colores}{
+      color:$fondo;
+  }  
+
+}

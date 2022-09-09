@@ -11,12 +11,12 @@
         border-radius: 15px;
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(0.9);
         }
     }
 
     a {
-        color: green;
+        color: $color-primario;
         position: relative;
         display: flex;
         justify-content: center;
@@ -70,7 +70,6 @@
 
         .bot-somos {
             display: flex;
-            flex-direction: row-reverse;
             margin: 10px;
 
             img {
@@ -164,7 +163,7 @@
     .main-contacto {
 
         form {
-            width: 50%;
+            width: 100%;
             margin: auto;
             background: rgba(0, 0, 0, 0.4);
             padding: 10px 20px;
