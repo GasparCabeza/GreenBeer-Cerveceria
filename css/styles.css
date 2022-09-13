@@ -104,28 +104,16 @@ header {
   grid-template-areas: "main-beer-1 main-beer-2" "main-beer-3 main-beer-4"; }
   .main-catalogo .main-beer-1 {
     grid-area: main-beer-1; }
-    .main-catalogo .main-beer-1 img {
-      width: 70%;
-      height: 80%;
-      border: 5px solid black; }
   .main-catalogo .main-beer-2 {
     grid-area: main-beer-2; }
-    .main-catalogo .main-beer-2 img {
-      width: 70%;
-      height: 80%;
-      border: 5px solid black; }
   .main-catalogo .main-beer-3 {
     grid-area: main-beer-3; }
-    .main-catalogo .main-beer-3 img {
-      width: 70%;
-      height: 80%;
-      border: 5px solid black; }
   .main-catalogo .main-beer-4 {
     grid-area: main-beer-4; }
-    .main-catalogo .main-beer-4 img {
-      width: 70%;
-      height: 80%;
-      border: 5px solid black; }
+  .main-catalogo img {
+    width: 70%;
+    height: 80%;
+    border: 5px solid black; }
 
 .main-barril {
   margin: 15px;
@@ -229,7 +217,9 @@ header {
     font-size: 30px; }
   .main-catalogo {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .main-catalogo .footer-index img {
+      width: 80px; } }
 
 @media (max-width: 320px) {
   header img {
@@ -261,7 +251,9 @@ header {
       display: flex;
       flex-direction: column; }
       .main-somos .bot-somos img, .main-somos .top-somos img {
-        width: 100%; } }
+        width: 100%; }
+    .main-somos .footer-index img {
+      width: 50px; } }
 
 .footer-index {
   border-radius: 15px;
@@ -272,14 +264,6 @@ header {
   justify-content: center; }
   .footer-index img {
     width: 100px; }
-
-@media screen and (max-width: 768px) {
-  .footer-index img {
-    width: 80px; } }
-
-@media screen and (max-width: 320px) {
-  .footer-index img {
-    width: 50px; } }
 
 * {
   margin: 0%;

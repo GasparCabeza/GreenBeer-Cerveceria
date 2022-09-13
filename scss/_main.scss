@@ -96,48 +96,24 @@
 
     .main-beer-1 {
         grid-area: main-beer-1;
-
-
-        img {
-            width: 70%;
-            height: 80%;
-            border: 5px solid black;
-
-        }
     }
 
     .main-beer-2 {
         grid-area: main-beer-2;
-
-        img {
-            width: 70%;
-            height: 80%;
-            border: 5px solid black;
-        }
-
     }
 
     .main-beer-3 {
         grid-area: main-beer-3;
-
-        img {
-            width: 70%;
-            height: 80%;
-            border: 5px solid black;
-        }
-
-
     }
 
     .main-beer-4 {
         grid-area: main-beer-4;
+    }
 
-        img {
-            width: 70%;
-            height: 80%;
-            border: 5px solid black;
-        }
-
+    img {
+        width: 70%;
+        height: 80%;
+        border: 5px solid black;
     }
 
 }
@@ -319,7 +295,13 @@
         display: flex;
         flex-direction: column;
 
+        //FOOTER INDEX
 
+        .footer-index {
+            img {
+                width: 80px;
+            }
+        }
 
     }
 
@@ -391,7 +373,13 @@
                 width: 100%;
             }
         }
-
+        //FOOTER INDEX
+        
+        .footer-index {
+            img {
+                width: 50px;
+            }
+        }
 
     }
 }
