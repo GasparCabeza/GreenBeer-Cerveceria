@@ -39,113 +39,269 @@
 
         }
     }
+}
+
+//MAIN-SOMOS
+.main-somos {
+
+    align-items: center;
 
 
-    //MAIN-SOMOS
-
-    .main-somos {
+    .top-somos {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        margin: 10px;
+
+        img {
+            width: 50%;
+        }
 
         p {
             margin: 7px;
+            font-size: 15px;
+            text-align: justify;
+            font: oblique bold 120% cursive;
+        }
+
+    }
+
+    .bot-somos {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        img {
+            border-radius: 15px;
+            border: 3px solid black;
+            width: 50%;
+            margin: 5px;
+        }
+
+        p {
+            margin: 7px;
+            font-size: 15px;
+            text-align: justify;
+            font: oblique bold 120% cursive;
+        }
+    }
+}
+
+// MAIN-CATALOGO
+.main-catalogo {
+    display: grid;
+    margin: 2px;
+    grid-template-areas:
+        "main-beer-1 main-beer-2"
+        "main-beer-3 main-beer-4";
+
+    .main-beer-1 {
+        grid-area: main-beer-1;
+
+
+        img {
+            width: 70%;
+            height: 80%;
+            border: 5px solid black;
+
+        }
+    }
+
+    .main-beer-2 {
+        grid-area: main-beer-2;
+
+        img {
+            width: 70%;
+            height: 80%;
+            border: 5px solid black;
+        }
+
+    }
+
+    .main-beer-3 {
+        grid-area: main-beer-3;
+
+        img {
+            width: 70%;
+            height: 80%;
+            border: 5px solid black;
+        }
+
+
+    }
+
+    .main-beer-4 {
+        grid-area: main-beer-4;
+
+        img {
+            width: 70%;
+            height: 80%;
+            border: 5px solid black;
+        }
+
+    }
+
+}
+
+
+//MAIN-BARRIL
+.main-barril {
+    margin: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-top: 2%;
+        border-radius: 15px;
+        width: 60%;
+        border: 4px solid black
+    }
+
+    p {
+        text-align: justify;
+        font: oblique bold 120% cursive;
+    }
+
+}
+
+// MAIN-CONTACTOç
+.main-contacto {
+
+    form {
+        width: 100%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+
+    }
+
+    h2 {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        margin: 0%;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+
+
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+
+    #boton {
+        background-color: black;
+        color: white;
+        padding: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    //HEADER
+    header {
+
+        img {
+            width: 60%;
+
+        }
+
+        h1 {
+            position: relative;
+            padding-left: 0%;
             font-size: 30px;
+
+        }
+
+        nav {
+            position: relative;
+            top: 0px;
+
+        }
+    }
+
+    //MAIN-INDEX
+    .body {
+        padding-left: 300%;
+    }
+
+
+    .main-index {
+        margin: 1%;
+
+        .imagen-index {
+            margin: 0%;
+            width: 100%;
+            height: 100%;
+        }
+
+
+    }
+
+    //MAIN-SOMOS
+    .main-somos {
+        flex-direction: column;
+
+        p {
+            margin: 7px;
+            font-size: 15px;
             text-align: justify;
         }
 
         .top-somos {
             display: flex;
-            margin: 10px;
+            flex-direction: column;
 
             img {
-                border-radius: 15px;
-                border: 3px solid black;
-                width: 50%;
-                margin: 5px;
+                width: 100%;
             }
-
         }
+
 
         .bot-somos {
             display: flex;
-            margin: 10px;
+            flex-direction: column;
 
             img {
-                border-radius: 15px;
-                border: 3px solid black;
-                width: 50%;
-                margin: 5px;
+                width: 100%;
             }
-        }
-    }
-
-    // MAIN-CATALOGO
-    .main-catalogo {
-        display: grid;
-        margin: 2px;
-        grid-template-areas:
-            "main-beer-1 main-beer-2"
-            "main-beer-3 main-beer-4";
-
-        .main-beer-1 {
-            grid-area: main-beer-1;
-
-
-            img {
-                width: 60%;
-                height: 80%;
-                border: 5px solid black;
-
-            }
-        }
-
-        .main-beer-2 {
-            grid-area: main-beer-2;
-
-            img {
-                width: 60%;
-                height: 80%;
-                border: 5px solid black;
-            }
-
-        }
-
-        .main-beer-3 {
-            grid-area: main-beer-3;
-
-            img {
-                width: 60%;
-                height: 80%;
-                border: 5px solid black;
-            }
-
-
-        }
-
-        .main-beer-4 {
-            grid-area: main-beer-4;
-
-            img {
-                width: 60%;
-                height: 80%;
-                border: 5px solid black;
-            }
-
         }
 
     }
-
 
     //MAIN-BARRIL
     .main-barril {
-        margin: 15px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         img {
             border-radius: 15px;
@@ -159,191 +315,83 @@
         }
     }
 
-    // MAIN-CONTACTOç
-    .main-contacto {
+    .main-catalogo {
+        display: flex;
+        flex-direction: column;
 
-        form {
-            width: 100%;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 10px 20px;
-            box-sizing: border-box;
-            margin-top: 20px;
-            border-radius: 7px;
+
+
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    //HEADER
+    header {
+
+        img {
+            width: 60%;
 
         }
 
-        h2 {
-            background-color: black;
-            color: aliceblue;
-            text-align: center;
-            margin: 0%;
+        h1 {
+            position: relative;
+            padding-left: 0%;
             font-size: 30px;
-            margin-bottom: 20px;
+
         }
 
-        input {
-            width: 100%;
-            margin-bottom: 20px;
-            padding: 7px;
-            box-sizing: border-box;
-            font-size: 17px;
-            border: none;
-        }
-
-
-        textarea {
-            min-height: 100px;
-            max-height: 200px;
-            max-width: 100%;
-            width: 100%;
-            margin-bottom: 20px;
-            padding: 7px;
-            box-sizing: border-box;
-            font-size: 17px;
-            border: none;
-        }
-
-        #boton {
-            background-color: black;
-            color: white;
-            padding: 20px;
-
-            &:hover {
-                cursor: pointer;
-            }
+        nav {
+            position: relative;
+            top: 0px;
 
         }
     }
 
-    @media (max-width: 1024px) {
+    //MAIN-INDEX
+    .main-index {
 
+        img {
+            width: 100%;
+            height: 50%;
+        }
 
+        h2 {
+            font-size: 5px;
+        }
 
+    }
 
-        // MAIN-CATALOGO
+    //MAIN-SOMOS
+    .main-somos {
+        flex-direction: column;
 
+        p {
+            margin: 7px;
+            font-size: 15px;
+            text-align: justify;
+        }
 
+        .top-somos {
+            display: flex;
+            flex-direction: column;
 
-
-
-
-
-
-
-        @media (max-width: 768px) {
-
-            //MAIN-INDEX
-            .body {
-                padding-left: 300%;
-            }
-
-
-            .main-index {
-                margin: 1%;
-
-                .imagen-index {
-                    margin: 0%;
-                    width: 100%;
-                    height: 100%;
-                }
-
-
-            }
-
-            //MAIN-SOMOS
-            .main-somos {
-                flex-direction: column;
-
-                p {
-                    margin: 7px;
-                    font-size: 30px;
-                    text-align: justify;
-                }
-
-                .top-somos {
-                    display: flex;
-                    flex-direction: column;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-
-                .bot-somos {
-                    display: flex;
-                    flex-direction: column;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-            }
-
-            //MAIN-BARRIL
-            .main-barril {
-
-                img {
-                    border-radius: 15px;
-                    width: 95%;
-                    border: 6px solid black
-                }
-
-                p {
-                    text-align: justify;
-                    font-size: 30px;
-                }
+            img {
+                width: 100%;
             }
         }
 
-        @media (max-width: 320px) {
 
-            //MAIN-INDEX
-            .main-index {
+        .bot-somos {
+            display: flex;
+            flex-direction: column;
 
-                img {
-                    width: 100%;
-                    height: 50%;
-                }
-
-                h2 {
-                    font-size: 5px;
-                }
-
-            }
-
-            //MAIN-SOMOS
-            .main-somos {
-                flex-direction: column;
-
-                p {
-                    margin: 7px;
-                    font-size: 15px;
-                    text-align: justify;
-                }
-
-                .top-somos {
-                    display: flex;
-                    flex-direction: column;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-
-                .bot-somos {
-                    display: flex;
-                    flex-direction: column;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
+            img {
+                width: 100%;
             }
         }
+
+
     }
 }

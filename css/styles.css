@@ -17,7 +17,7 @@ header {
   border-radius: 20px;
   border: 3px solid black; }
   header img {
-    width: 30%; }
+    width: 60%; }
   header h1 {
     align-items: center;
     color: #012001;
@@ -41,27 +41,6 @@ header {
         header .navbar ul li a {
           text-decoration: none;
           color: black; }
-
-@media screen and (max-width: 768px) {
-  header h1 {
-    position: relative;
-    padding-left: 0%;
-    font-size: 30px; }
-  header nav {
-    position: relative;
-    top: 0px; } }
-
-@media screen and (max-width: 320px) {
-  header {
-    flex-direction: column; }
-    header h1 {
-      position: relative;
-      right: 0%;
-      top: 0%; }
-    header .navbar-2 {
-      display: flex;
-      flex-direction: column;
-      top: 0px; } }
 
 .main-index {
   display: flex;
@@ -90,166 +69,198 @@ header {
       transform: translateX(-50%) translateY(-50%);
       -webkit-text-stroke: 2px black;
       font-size: 40px; }
-  .main-index .main-somos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .main-index .main-somos p {
-      margin: 7px;
-      font-size: 30px;
-      text-align: justify; }
-    .main-index .main-somos .top-somos {
-      display: flex;
-      margin: 10px; }
-      .main-index .main-somos .top-somos img {
-        border-radius: 15px;
-        border: 3px solid black;
-        width: 50%;
-        margin: 5px; }
-    .main-index .main-somos .bot-somos, .main-index .main-somos .top-somos {
-      display: flex;
-      margin: 10px; }
-      .main-index .main-somos .bot-somos img, .main-index .main-somos .top-somos img {
-        border-radius: 15px;
-        border: 3px solid black;
-        width: 50%;
-        margin: 5px; }
-  .main-index .main-catalogo {
-    display: grid;
-    margin: 2px;
-    grid-template-areas: "main-beer-1 main-beer-2" "main-beer-3 main-beer-4"; }
-    .main-index .main-catalogo .main-beer-1 {
-      grid-area: main-beer-1; }
-      .main-index .main-catalogo .main-beer-1 img {
-        width: 60%;
-        height: 80%;
-        border: 5px solid black; }
-    .main-index .main-catalogo .main-beer-2 {
-      grid-area: main-beer-2; }
-      .main-index .main-catalogo .main-beer-2 img {
-        width: 60%;
-        height: 80%;
-        border: 5px solid black; }
-    .main-index .main-catalogo .main-beer-3 {
-      grid-area: main-beer-3; }
-      .main-index .main-catalogo .main-beer-3 img {
-        width: 60%;
-        height: 80%;
-        border: 5px solid black; }
-    .main-index .main-catalogo .main-beer-4 {
-      grid-area: main-beer-4; }
-      .main-index .main-catalogo .main-beer-4 img {
-        width: 60%;
-        height: 80%;
-        border: 5px solid black; }
-  .main-index .main-barril {
-    margin: 15px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .main-index .main-barril img {
-      border-radius: 15px;
-      width: 95%;
-      border: 6px solid black; }
-    .main-index .main-barril p {
-      text-align: justify;
-      font-size: 30px; }
-  .main-index .main-contacto form {
-    width: 100%;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px; }
-  .main-index .main-contacto h2 {
-    background-color: black;
-    color: aliceblue;
-    text-align: center;
-    margin: 0%;
-    font-size: 30px;
-    margin-bottom: 20px; }
-  .main-index .main-contacto input {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none; }
-  .main-index .main-contacto textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none; }
-  .main-index .main-contacto #boton {
-    background-color: black;
-    color: white;
-    padding: 20px; }
-    .main-index .main-contacto #boton:hover {
-      cursor: pointer; }
 
-@media (max-width: 1024px) and (max-width: 768px) {
-  .main-index .body {
+.main-somos {
+  align-items: center; }
+  .main-somos .top-somos {
+    display: flex;
+    align-items: center;
+    margin: 10px; }
+    .main-somos .top-somos img {
+      width: 50%; }
+    .main-somos .top-somos p {
+      margin: 7px;
+      font-size: 15px;
+      text-align: justify;
+      font: oblique bold 120% cursive; }
+  .main-somos .bot-somos, .main-somos .top-somos {
+    display: flex;
+    align-items: center;
+    margin: 10px; }
+    .main-somos .bot-somos img, .main-somos .top-somos img {
+      border-radius: 15px;
+      border: 3px solid black;
+      width: 50%;
+      margin: 5px; }
+    .main-somos .bot-somos p, .main-somos .top-somos p {
+      margin: 7px;
+      font-size: 15px;
+      text-align: justify;
+      font: oblique bold 120% cursive; }
+
+.main-catalogo {
+  display: grid;
+  margin: 2px;
+  grid-template-areas: "main-beer-1 main-beer-2" "main-beer-3 main-beer-4"; }
+  .main-catalogo .main-beer-1 {
+    grid-area: main-beer-1; }
+    .main-catalogo .main-beer-1 img {
+      width: 70%;
+      height: 80%;
+      border: 5px solid black; }
+  .main-catalogo .main-beer-2 {
+    grid-area: main-beer-2; }
+    .main-catalogo .main-beer-2 img {
+      width: 70%;
+      height: 80%;
+      border: 5px solid black; }
+  .main-catalogo .main-beer-3 {
+    grid-area: main-beer-3; }
+    .main-catalogo .main-beer-3 img {
+      width: 70%;
+      height: 80%;
+      border: 5px solid black; }
+  .main-catalogo .main-beer-4 {
+    grid-area: main-beer-4; }
+    .main-catalogo .main-beer-4 img {
+      width: 70%;
+      height: 80%;
+      border: 5px solid black; }
+
+.main-barril {
+  margin: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main-barril img {
+    margin-top: 2%;
+    border-radius: 15px;
+    width: 60%;
+    border: 4px solid black; }
+  .main-barril p {
+    text-align: justify;
+    font: oblique bold 120% cursive; }
+
+.main-contacto form {
+  width: 100%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px; }
+
+.main-contacto h2 {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  margin: 0%;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+.main-contacto input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none; }
+
+.main-contacto textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none; }
+
+.main-contacto #boton {
+  background-color: black;
+  color: white;
+  padding: 20px; }
+  .main-contacto #boton:hover {
+    cursor: pointer; }
+
+@media (max-width: 768px) {
+  header img {
+    width: 60%; }
+  header h1 {
+    position: relative;
+    padding-left: 0%;
+    font-size: 30px; }
+  header nav {
+    position: relative;
+    top: 0px; }
+  .body {
     padding-left: 300%; }
-  .main-index .main-index {
+  .main-index {
     margin: 1%; }
-    .main-index .main-index .imagen-index {
+    .main-index .imagen-index {
       margin: 0%;
       width: 100%;
       height: 100%; }
-  .main-index .main-somos {
+  .main-somos {
     flex-direction: column; }
-    .main-index .main-somos p {
-      margin: 7px;
-      font-size: 30px;
-      text-align: justify; }
-    .main-index .main-somos .top-somos {
-      display: flex;
-      flex-direction: column; }
-      .main-index .main-somos .top-somos img {
-        width: 100%; }
-    .main-index .main-somos .bot-somos, .main-index .main-somos .top-somos {
-      display: flex;
-      flex-direction: column; }
-      .main-index .main-somos .bot-somos img, .main-index .main-somos .top-somos img {
-        width: 100%; }
-  .main-index .main-barril img {
-    border-radius: 15px;
-    width: 95%;
-    border: 6px solid black; }
-  .main-index .main-barril p {
-    text-align: justify;
-    font-size: 30px; } }
-
-@media (max-width: 1024px) and (max-width: 320px) {
-  .main-index .main-index img {
-    width: 100%;
-    height: 50%; }
-  .main-index .main-index h2 {
-    font-size: 5px; }
-  .main-index .main-somos {
-    flex-direction: column; }
-    .main-index .main-somos p {
+    .main-somos p {
       margin: 7px;
       font-size: 15px;
       text-align: justify; }
-    .main-index .main-somos .top-somos {
+    .main-somos .top-somos {
       display: flex;
       flex-direction: column; }
-      .main-index .main-somos .top-somos img {
+      .main-somos .top-somos img {
         width: 100%; }
-    .main-index .main-somos .bot-somos, .main-index .main-somos .top-somos {
+    .main-somos .bot-somos, .main-somos .top-somos {
       display: flex;
       flex-direction: column; }
-      .main-index .main-somos .bot-somos img, .main-index .main-somos .top-somos img {
+      .main-somos .bot-somos img, .main-somos .top-somos img {
+        width: 100%; }
+  .main-barril img {
+    border-radius: 15px;
+    width: 95%;
+    border: 6px solid black; }
+  .main-barril p {
+    text-align: justify;
+    font-size: 30px; }
+  .main-catalogo {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 320px) {
+  header img {
+    width: 60%; }
+  header h1 {
+    position: relative;
+    padding-left: 0%;
+    font-size: 30px; }
+  header nav {
+    position: relative;
+    top: 0px; }
+  .main-index img {
+    width: 100%;
+    height: 50%; }
+  .main-index h2 {
+    font-size: 5px; }
+  .main-somos {
+    flex-direction: column; }
+    .main-somos p {
+      margin: 7px;
+      font-size: 15px;
+      text-align: justify; }
+    .main-somos .top-somos {
+      display: flex;
+      flex-direction: column; }
+      .main-somos .top-somos img {
+        width: 100%; }
+    .main-somos .bot-somos, .main-somos .top-somos {
+      display: flex;
+      flex-direction: column; }
+      .main-somos .bot-somos img, .main-somos .top-somos img {
         width: 100%; } }
 
 .footer-index {
