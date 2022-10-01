@@ -1,7 +1,5 @@
 @import "./variables";
 @import "./mixing";
-@import "./bucles";
-@import "./each";
 @import "./header";
 @import "./main";
 @import "./footer.scss";
@@ -13,5 +11,7 @@
 .top-somos {
   @extend .bot-somos
 }
-
+body{
+  background-color: gray;
+}
 
